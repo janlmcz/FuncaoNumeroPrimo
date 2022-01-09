@@ -18,7 +18,7 @@ function Primo($inicial, $final) {
 	$inicial++;
 	$array = array();
 	for($i=$inicial;$i<$final;$i++) {
-		if($i % 2 != 0) {
+		if(gmp_prob_prime($i) >=2) {
 			$array[] = $i;
 		}
 	}
